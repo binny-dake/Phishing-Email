@@ -1,0 +1,79 @@
+Phishing Email Incident Report
+
+Date of Incident: May 5, 2025
+Reported By: [Recipient Redacted]
+Email Subject: Retención y DIF de IVA Factura 21485/87 INEXCO C.A
+Sender: [Redacted]
+Recipient: [Redacted]
+
+1. Summary
+This email, disguised as a legitimate financial communication from "INEXCO C.A", was identified as a phishing attempt. The message includes a suspicious hyperlink labeled as a PDF file allegedly containing a payment and tax retention receipt. Security monitoring tools have flagged this email due to its malicious content and intent to deploy malware.
+
+2. Indicators of Compromise (IOCs)
+Phishing Link:
+EMISION_DE_RET_FACT_21485/87-GNAS_ODC_282497//PAGO.PDF
+This link is crafted to appear as a PDF file but likely redirects to a malicious payload.
+
+Threat Type: Remote Access Trojan (RAT)
+
+Specific Threat Identified: Poco RAT
+
+Tactic: Link-based attack
+User is lured into clicking a hyperlink under the guise of receiving a legitimate document.
+
+3. Security Detection
+Security Email Gateway (SEG):
+
+Proofpoint
+
+Microsoft ATP (Advanced Threat Protection)
+
+Email Security Analysis Tool:
+
+PhishMe Cofense
+
+4. Language and Social Engineering Tactics
+Language Used: Spanish
+
+Tactics Observed:
+
+Appears to be a business-related communication involving invoicing and tax documentation.
+
+Use of polite and formal language to establish trust.
+
+Request for confirmation to encourage interaction and possible clicking on the link.
+
+5. Risk Assessment
+Risk Level: High
+
+Potential Impact:
+
+Unauthorized remote access via Poco RAT
+
+Data exfiltration
+
+Network compromise
+
+Credential theft
+
+6. Recommendations
+Immediate Actions:
+
+Do not click the link.
+
+Isolate the device if the link was accessed.
+
+Report the email to your security team or designated IT administrator.
+
+Delete the email from the mailbox and trash/recycle folder.
+
+Preventive Measures:
+
+Educate employees on identifying phishing emails.
+
+Regularly update antivirus and anti-malware definitions.
+
+Ensure email filtering systems are updated with current threat intelligence.
+
+7. Conclusion
+This email is a confirmed phishing attempt leveraging Poco RAT via a deceptive hyperlink. It has been identified and blocked by modern security tools (Proofpoint, Microsoft ATP). The email should be treated as malicious and all organizational protocols for phishing mitigation should be followed.
